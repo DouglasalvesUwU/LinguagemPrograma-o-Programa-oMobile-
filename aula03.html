@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Profissional com Animações</title>
+    <!-- Incluindo a biblioteca AOS para animações ao rolar -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+        body{
+        background-image: url(artigo-introducao-ao-padrao-mvc-29308.png);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        }
+        </style>
+    <!-- Cabeçalho com imagem de fundo -->
+    <div class="header">
+        <div class="header-content">
+            <h1>Bem-vindo à Minha Página Profissional</h1>
+            <p>Desenvolvedor especialista em frameworks MVC e animações CSS</p>
+        </div>
+    </div>
+
+    <!-- Seção de Projetos com animações ao rolar -->
+    <div class="section projects" data-aos="fade-up">
+        <h2>Meus Projetos</h2>
+        <div class="project" onclick="toggleProjectDetails('project1')">
+            <h3>Sistema de Inventário</h3>
+            <p>Clique para mais detalhes</p>
+        </div>
+        <div class="project-details" id="project1" style="display: none;">
+            <p>Aplicação para gerenciamento de estoque, usando ASP.NET MVC.</p>
+        </div>
+        
+        <div class="project" onclick="toggleProjectDetails('project2')">
+            <h3>Plataforma de Blogs</h3>
+            <p>Clique para mais detalhes</p>
+        </div>
+        <div class="project-details" id="project2" style="display: none;">
+            <p>Uma plataforma para criar e gerenciar blogs, com Ruby on Rails.</p>
+        </div>
+        
+        <div class="project" onclick="toggleProjectDetails('project3')">
+            <h3>Gerenciador de Tarefas</h3>
+            <p>Clique para mais detalhes</p>
+        </div>
+        <div class="project-details" id="project3" style="display: none;">
+            <p>Aplicação para gerenciamento de tarefas, usando Django.</p>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <div class="section contact" data-aos="fade-up">
+        <h2>Contato</h2>
+        <form>
+            <p>
+                <label para="name">Nome:</label>
+                <input type="text" id="name" required>
+            </p>
+            <p>
+                <label para="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </p>
+            <p>
+                <label para="message">Mensagem:</label>
+                <textarea id="message" rows="4" required></textarea>
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>&copy; douglasanalistadesistema0@gmail.com.</p>
+    </div>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="scripts.js"></script>
+    <!-- Inicialização da biblioteca AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
